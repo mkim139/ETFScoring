@@ -31,8 +31,9 @@ CNN Encoder
 https://arxiv.org/abs/1408.5882
 
 CNN Encoder의 경우, Kim, Y의 모델을 사용하였습니다.  
-이 모델의 경우 긴 Text를 사용하며, LSTM을 사용 할 경우 Sequential 모델의 특성인 Gradient explosion/vanishing 문제, 그리고 너무 긴 training time을  
-피할 수 없다 생각했습니다. BERT의 경우도, Memory 이슈가 있어 긴 text를 모두 읽지는 못하였습니다. 이런 긴 text를 빠르게 처리 할 수 있는 CNN encoder가 적합하다 생각하였습니다.  
+이 모델의 경우 긴 Text를 사용하며, LSTM을 사용 할 경우 Sequential 모델의 특성인 Gradient explosion/vanishing 문제,  
+그리고 너무 긴 training time을 피할 수 없다 생각했습니다.  BERT의 경우도, Memory 이슈가 있어 긴 text를 모두 읽지는 못하였습니다.  
+이런 긴 text를 빠르게 처리 할 수 있는 CNN encoder가 적합하다 생각하였습니다.  
 (하지만, CNN 모델의 경우 하루의 모든 Text를 3-dimensional array로 너무 간단하게 summarize하여 information loss가 심한 것으로 보임, 추후에 다른 인코더 사용해 볼 것)  
 
 
