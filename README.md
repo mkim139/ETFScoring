@@ -45,4 +45,23 @@ CNN Encoder의 경우, Kim, Y의 모델을 사용하였습니다.
 결과:
 
 
+![훈련결과](https://user-images.githubusercontent.com/32697109/173227146-19601422-5e62-461c-bbc1-c8cc185efcd4.png)
+
+
+Training error는 하락하고 Testing error는 상승함으로 Overfitting되어 가고 있는 것이 보입니다.  
+하지만 Accuracy와 Precision이 지속적으로 상승하는 것을 확인 할 수 있으며, False Negative를 무시한다면 좋은 투자 전략을 만들 수 있을 것으로 보입니다.
+
+
+![훈련결과2](https://user-images.githubusercontent.com/32697109/173227149-168cb177-5ebe-4d2a-ba0b-10a23ac822ce.png)
+
+
+Threshold를 증가하여 예측할때 마다 예측 Precision이 증가하는것을 볼 수 있습니다.  
+특히, .5 이후 강한 upward linear pattern을 확인 할 수 있습니다.  
+.5 이상의 점수를 받은 경우, 투자를 고려하는 전략을 선택할 수 있을 만하며, 큰 점수일 경우 큰 confidence로 볼 수도 있습니다.  
+이러한 우상향 특성은 좋은 투자 전략으로 사용될 수 있을 것으로 보입니다.   
+.7 이상 점수를 받는 경우에 precision이 급락하는걸 볼 수 있는데, 이건 .7 이상 점수를 받은 경우가 드물어서일 가능성이 클 것으로 보이나, 주의가 필요합니다.  
+
+![성능평가](https://user-images.githubusercontent.com/32697109/173227150-6d8b5e80-7606-4d70-adc2-4c6b1dc29bdd.png)
+
+
 
