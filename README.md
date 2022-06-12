@@ -7,7 +7,7 @@
 1차분된 상품 가격 데이터와 결합하여 미래 가격 상승 가능성을 예측합니다.  
 
 
-모델 이미지  
+![모델 이미지](https://user-images.githubusercontent.com/32697109/173226742-80bb065e-cd22-43e9-8cd7-ed0b4ece406d.png)
 
 
 사용 데이터:  
@@ -22,7 +22,7 @@ OKT parser를 사용하여 Text tokenizing후 Word2Vec 알고리즘을 사용하
 Price data는 1차분하여 비정상성 제거 후 사용하였습니다.  
 
 
-ACF 이미지
+![ACF](https://user-images.githubusercontent.com/32697109/173226778-c7bdb0a2-e824-47a9-b1b3-0114d35c7581.png) 
 
 
 CNN Encoder
